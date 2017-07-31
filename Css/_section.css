@@ -1,0 +1,16 @@
+.section-container {
+  margin-top: 40px;
+  width: 100%;
+}
+.section-top-space_lg {
+  margin-top: 80px !important;
+}
+.section-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-title .text_h2 {
+  padding-top: 0;
+  font-weight: 300;
+}
+.section-wrapper {}

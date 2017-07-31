@@ -1,0 +1,111 @@
+.button {
+  display: inline-block;
+  padding: 5px;
+  color: inherit;
+}
+.button-radius_circle {
+  border-radius: 30px;
+}
+/************************* download button on header section *********************/
+.download-button {
+  border: none;
+  background-color: #00aa8d;
+  color: #fff;
+  padding: 12px 30px;
+  font-weight: 500;
+}
+.download-button:hover {
+  background-color: #00bf9a;
+  text-decoration: none;
+  color: #fff;
+}
+.download-button:visited,
+.download-button:focus {
+  text-decoration: none;
+}
+/************************* application download link buttons *********************/
+.button-download-link {
+  display: inline-block;
+  border-radius: 3px;
+  padding-right: 55px;
+  padding-left: 35px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  margin-top: 7px;
+  margin-left: 5px;
+  position: relative;
+  color: #fff;
+  background-color: #ddd;
+  font-size: 15px;
+  font-weight: 400px;
+  text-align: right;
+}
+.button-download-link:last-child {
+  margin-left: 0;
+}
+.button-download-link img {
+  height: 30px;
+  position: absolute;
+  right: 13px;
+  top: 11px;
+  color: #fff;
+}
+.button-download-link .link-touch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-width: 100%;
+  z-index: 1;
+}
+.button-download-link::before {
+  position: absolute;
+  top: 7px;
+  right: 55px;
+  content: 'دریافت از';
+  font-size: 12px;
+  font-weight: 200;
+}
+.button-google-play {
+  background-color: #212121;
+}
+.button-apple-store {
+  background-color: #212121;
+}
+.button-cafebazaar {
+  background-color: #91b42f;
+}
+.hero-register-button {
+  margin-top: 30px;
+  padding: 10px 0;
+  /*
+  width: 100%;
+  display: none;
+  visibility: hidden;
+  */
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  /*background-color: #00cca9;*/
+  background-color: #2373da;
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .button-download-link {
+    width: 100%;
+    display: inline-block;
+    max-width: 200px;
+    margin-left: 0;
+  }
+  .hero-register-button {
+    display: inherit;
+    visibility: visible;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 175px;
+  }
+}

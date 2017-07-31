@@ -1,0 +1,995 @@
+{
+	"id": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+	"name": "iHandyClient",
+	"description": "",
+	"order": [
+		"641c1dfa-d109-a033-c338-f159c22b8db1",
+		"535dadbf-52a9-3990-dd61-7f74a2e2b064",
+		"d0c3e50b-110d-921e-0961-c54241e31412",
+		"c403cacd-af7e-f516-3c32-b06cfb385abd",
+		"5d048877-4361-649f-386a-1056e260ccc6",
+		"37169059-fb11-7615-3018-f85430c90e0a",
+		"60153e64-7fc5-4903-0c45-4b6d286867dd",
+		"37f9f4b8-5c67-fe30-7638-a31cee8da8d4",
+		"f4013645-7781-ce8f-0c38-c93a09468241",
+		"5ea22a5b-1c3b-9a49-07a2-e2e39f1edcea",
+		"c2b405d3-46fd-d384-5e77-05ea711c1579",
+		"875ee19a-c6e6-2ba8-1fce-7f4aaf9ef55a",
+		"37134d36-83ac-3309-e076-628a0a90bca3",
+		"384b5591-b102-0b9e-3131-024d71559e18",
+		"4859f960-6ee2-857d-d59b-2632fb54d08f",
+		"397bf9f3-282d-834c-b645-4f40ec212a69",
+		"60b801dd-fb63-2d9f-5480-0e41043174d3",
+		"f325004a-3831-6730-2c89-bd252598db78",
+		"9e4f996e-7985-7a2d-8cf9-fa66509d514a",
+		"8e324248-3cc3-e4f5-4f3f-205c59b13d35"
+	],
+	"folders": [],
+	"timestamp": 1494246256771,
+	"owner": "389686",
+	"public": false,
+	"requests": [
+		{
+			"id": "37134d36-83ac-3309-e076-628a0a90bca3",
+			"headers": "Content-Type: application/json\nToken: SM1S440CVVR4844QT16NDYXW1E07GDPAPV3LXTY9AHRIANOOMGHCO3S4ZE1ZD25SFROMBT29C7M6HPWO0MVA6NVWC9WT185IL8CT\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "SM1S440CVVR4844QT16NDYXW1E07GDPAPV3LXTY9AHRIANOOMGHCO3S4ZE1ZD25SFROMBT29C7M6HPWO0MVA6NVWC9WT185IL8CT",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/Order/GetUserOrderDetails",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499518929714,
+			"name": "GetOrderDetails",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"rawModeData": "{\n  \"orderId\": 30458\n}"
+		},
+		{
+			"id": "37169059-fb11-7615-3018-f85430c90e0a",
+			"headers": "Content-Type: application/json\nToken: 8QJFBGW5V93E8CTRVW3ALV9BHAYU6WSSWOUFX7J7322P0CTO6GL9KOQMQI7BSB89QLRURO3XN5GS2UKFQJXZKTII8HZPAHO2339P\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "8QJFBGW5V93E8CTRVW3ALV9BHAYU6WSSWOUFX7J7322P0CTO6GL9KOQMQI7BSB89QLRURO3XN5GS2UKFQJXZKTII8HZPAHO2339P",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/Order/GetUserOrders",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1496475524272,
+			"name": "OrderOngoing",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"responses": [],
+			"folder": null,
+			"descriptionFormat": "html",
+			"rawModeData": "{\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"requestType\": 5\r\n}"
+		},
+		{
+			"id": "37f9f4b8-5c67-fe30-7638-a31cee8da8d4",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/Order/OrderPaymentRequest",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "OrderPaymentRequest",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1497345766494,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"requestType\": 5\r\n}"
+		},
+		{
+			"id": "384b5591-b102-0b9e-3131-024d71559e18",
+			"headers": "Content-Type: application/json\nToken: J4YBP6SR6CODXG1XCJLVIRR9GH9LNKWJ8KURCGFPZ21QT3BVF3R63KQ1MZ5H6GEWPFENVKU5D55QZAPMGNGT20PX42ENL8SSXFBO\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "J4YBP6SR6CODXG1XCJLVIRR9GH9LNKWJ8KURCGFPZ21QT3BVF3R63KQ1MZ5H6GEWPFENVKU5D55QZAPMGNGT20PX42ENL8SSXFBO",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/Order/GetOrderBill",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GetOrderInvoice",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1497766788315,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"orderId\": 10308\r\n}"
+		},
+		{
+			"id": "397bf9f3-282d-834c-b645-4f40ec212a69",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"url": "http://ihandy.ir/api/api/Order/SubmitOrder",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "SubmitOrder",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496756692822,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"folder": null,
+			"rawModeData": "{\n  \"formattedAddress\": \"اوین غیاثی\",\n  \"categoryId\": \"5\",\n  \"description\": \"\",\n  \"discountCode\": 0,\n  \"addressDistrictNO\": 1,\n  \"gmapAddress\": \"اوین , نوفرستی\",\n  \"serviceTimeHour\": 18,\n  \"saveAddressAsLandmark\": false,\n  \"gmapLat\": 35.79541503459128,\n  \"gmapLng\": 51.39408823102712,\n  \"serviceTimeMinute\": 12,\n  \"serviceDate\": \"1396/9/27\",\n  \"selectedCategoryUnits\": [\n    {\n      \"categoryUnitMetricTitle\": \"ساعت\",\n      \"categoryUnitTitle\": \"تعداد ساعت کار هر تمیز کار\",\n      \"categoryUnitType\": 3,\n      \"categoryUnitValue\": 1,\n      \"categoryUnitId\": 13,\n      \"itemType\": 0\n    }\n  ],\n  \"paymentType\": 1,\n  \"tel\": \"09124262137\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "4859f960-6ee2-857d-d59b-2632fb54d08f",
+			"name": "GetOrderPrice",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: AJBJX15T012B3TUN9GR11UVHHDYK3P15XGGWGM25GWET1J10GG3B455PX3CUDUZL97OWM7GXNVUFQBP7M7EWVZA1L09MJI2V62T4\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://www.ihandy.ir/api/api/Order/GetOrderPrice",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "AJBJX15T012B3TUN9GR11UVHHDYK3P15XGGWGM25GWET1J10GG3B455PX3CUDUZL97OWM7GXNVUFQBP7M7EWVZA1L09MJI2V62T4",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"rawModeData": "{\n  \"formattedAddress\": \"اوین غیاثی\",\n  \"categoryId\": \"5\",\n  \"description\": \"\",\n  \"discountCode\": 0,\n  \"addressDistrictNO\": 1,\n  \"gmapAddress\": \"اوین , نوفرستی\",\n  \"serviceTimeHour\": 18,\n  \"saveAddressAsLandmark\": false,\n  \"gmapLat\": 35.79541503459128,\n  \"gmapLng\": 51.39408823102712,\n  \"serviceTimeMinute\": 12,\n  \"serviceDate\": \"1396/9/27\",\n  \"selectedCategoryUnits\": [\n    {\n      \"categoryUnitMetricTitle\": \"ساعت\",\n      \"categoryUnitTitle\": \"تعداد ساعت کار هر تمیز کار\",\n      \"categoryUnitType\": 3,\n      \"categoryUnitValue\": 1,\n      \"categoryUnitId\": 13,\n      \"itemType\": 0\n    }\n  ],\n  \"paymentType\": 1,\n  \"tel\": \"09124262137\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "535dadbf-52a9-3990-dd61-7f74a2e2b064",
+			"name": "GetFavoriteAddress",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/GetSelectedAddresses",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"rawModeData": "{\n  \"pageIndex\": 1,\n  \"pageSize\": 2\n}"
+		},
+		{
+			"id": "5d048877-4361-649f-386a-1056e260ccc6",
+			"headers": "Content-Type: application/json\nToken: S5031Q07945KLGJFIH0WZN0JG6MDKMPW6G6AI3GBY6TZD7L3IDU44BEFFQX4EXXWOINEJJ6OAY733AGJUS4H2V15C152GL7BI7K4\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "S5031Q07945KLGJFIH0WZN0JG6MDKMPW6G6AI3GBY6TZD7L3IDU44BEFFQX4EXXWOINEJJ6OAY733AGJUS4H2V15C152GL7BI7K4",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/Order/GetUserOrders",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1498973991419,
+			"name": "OrderFuture",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"responses": [],
+			"rawModeData": "{\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"requestType\": 7\r\n}"
+		},
+		{
+			"id": "5ea22a5b-1c3b-9a49-07a2-e2e39f1edcea",
+			"headers": "Content-Type: application/json\nToken: NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.ihandy.ir/api/api/User/MakeNotificationSeen",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "MakeNotificationSeen",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1499519326446,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"notificationIds\": [\r\n    1,\r\n    2\r\n  ]\r\n}"
+		},
+		{
+			"id": "60153e64-7fc5-4903-0c45-4b6d286867dd",
+			"headers": "Content-Type: application/json\nToken: S5031Q07945KLGJFIH0WZN0JG6MDKMPW6G6AI3GBY6TZD7L3IDU44BEFFQX4EXXWOINEJJ6OAY733AGJUS4H2V15C152GL7BI7K4\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "S5031Q07945KLGJFIH0WZN0JG6MDKMPW6G6AI3GBY6TZD7L3IDU44BEFFQX4EXXWOINEJJ6OAY733AGJUS4H2V15C152GL7BI7K4",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/Order/GetUserOrders",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "OrderHistory",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1499519185182,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"requestType\": 2\r\n}"
+		},
+		{
+			"folder": null,
+			"id": "60b801dd-fb63-2d9f-5480-0e41043174d3",
+			"name": "EditOrder",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://www.ihandy.ir/api/api/Order/EditOrder",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"rawModeData": "{\n  \"formattedAddress\": \"0\",\n  \"categoryId\": \"21\",\n  \"description\": \"\",\n  \"discountCode\": \"\",\n  \"addressDistrictNO\": 0,\n  \"gmapAddress\": \"\",\n  \"serviceTimeHour\": 0,\n  \"orderId\": 30454,\n  \"saveAddressAsLandmark\": false,\n  \"gmapLat\": 0,\n  \"gmapLng\": 0,\n  \"serviceTimeMinute\": 0,\n  \"serviceDate\": \"0\",\n  \"selectedCategoryUnits\": [\n    {\n      \"categoryUnitMetricTitle\": \"ساعت\",\n      \"categoryUnitTitle\": \"تمیزکار منازل و محل کار\",\n      \"categoryUnitType\": 3,\n      \"categoryUnitValue\": 8,\n      \"categoryUnitId\": 16,\n      \"itemType\": 0,\n      \"totalPrice\": 0\n    }\n  ],\n  \"paymentType\": 3,\n  \"tel\": \"0\"\n}"
+		},
+		{
+			"id": "641c1dfa-d109-a033-c338-f159c22b8db1",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"url": "http://ihandy.ir/api/api/Category/GetCategories",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GetCategories",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1494246256771,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"isFromCollection": true,
+			"folder": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"pathVariableData": [],
+			"rawModeData": "{\n  \"parentId\": null,\n  \"id\": 6\n}"
+		},
+		{
+			"id": "875ee19a-c6e6-2ba8-1fce-7f4aaf9ef55a",
+			"headers": "Content-Type: application/json\nToken: VQAWN6V3RMIZAO5Y51DUHDMHUGCA57YH9ALTP7EJBAXG9F9WYP4PQ1QSD3BH3V7UYAZ9DLI7W3SHQGIPHQLQCJ0IU2QW67QQCDS8\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "VQAWN6V3RMIZAO5Y51DUHDMHUGCA57YH9ALTP7EJBAXG9F9WYP4PQ1QSD3BH3V7UYAZ9DLI7W3SHQGIPHQLQCJ0IU2QW67QQCDS8",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/User/GetTransactions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499518954804,
+			"name": "GetTransactions",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"rawModeData": "{\n  \"pageIndex\": 1,\n  \"pageSize\": 100,\n  \"type\": 1\n}"
+		},
+		{
+			"id": "8e324248-3cc3-e4f5-4f3f-205c59b13d35",
+			"headers": "Content-Type: application/json\nToken: NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.ihandy.ir/api/api/Order/RateOrderTechnician",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499519493021,
+			"name": "RateOrder",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"responses": [],
+			"rawModeData": "{\r\n  \"orderId\": 1,\r\n  \"rateValue\": 2\r\n}"
+		},
+		{
+			"id": "9e4f996e-7985-7a2d-8cf9-fa66509d514a",
+			"headers": "Content-Type: application/json\nToken: NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.ihandy.ir/api/api/Order/SetOrderDone",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499519560066,
+			"name": "FinishOrder",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"responses": [],
+			"rawModeData": "{\r\n  \"orderId\": 1\r\n}"
+		},
+		{
+			"id": "c2b405d3-46fd-d384-5e77-05ea711c1579",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/User/GetNotifications",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GetGiftAndDiscount",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1499519637691,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 1000,\r\n  \"type\": 9\r\n}"
+		},
+		{
+			"id": "c403cacd-af7e-f516-3c32-b06cfb385abd",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/User/DeleteSelectedAddress",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "DeleteFavoriteAddress",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496468023689,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"id\":11\n}"
+		},
+		{
+			"folder": null,
+			"id": "d0c3e50b-110d-921e-0961-c54241e31412",
+			"name": "AddFavoriteAddress",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/DeleteSelectedAddress",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"rawModeData": "{\n  \"title\": \"یه جایی\",\n  \"formattedAddress\": \"خیابان باغ\",\n  \"gmapAddress\": \"سعادت آباد , خیابان باغ\",\n  \"gmapLat\": \"35.79197919417556\",\n  \"gmapLng\": \"51.38487484306096\",\n  \"addressDistrictNO\": \"2\"\n}\n\n{\"gmapLat\":\"35.7957960300648\"\n,\"addressDistrictNO\":\"۱\"\n,\"gmapLng\":\"51.39837104827166\"\n,\"title\":\"خونمونننن\"\n,\"gmapAddress\":\"اوین , اوین - کچویی\"\n,\"formattedAddress\":\"اوین\"}"
+		},
+		{
+			"id": "f325004a-3831-6730-2c89-bd252598db78",
+			"headers": "Content-Type: application/json\nToken: NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.ihandy.ir/api/api/Order/CancelOrder",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499519522435,
+			"name": "CancelOrder",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"responses": [],
+			"rawModeData": "{\r\n  \"orderId\": 1\r\n}"
+		},
+		{
+			"id": "f4013645-7781-ce8f-0c38-c93a09468241",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ihandy.ir/api/api/User/GetNotifications",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1497082638438,
+			"name": "GetNotifications",
+			"description": "",
+			"collectionId": "a5ed8f6b-965a-08e0-96ce-b4055e9342cd",
+			"responses": [],
+			"rawModeData": "{\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 1000,\r\n  \"type\": 10\r\n}"
+		}
+	]
+}

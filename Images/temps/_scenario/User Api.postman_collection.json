@@ -1,0 +1,593 @@
+{
+	"id": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+	"name": "User Api",
+	"description": "",
+	"order": [
+		"3488718b-7c3e-eabf-4d41-d5efbef565ab",
+		"d052b8f7-cd50-ab97-cb56-c75ef1deb9d3",
+		"5f4e5f64-1279-2899-082b-67333b210ab4",
+		"7def7223-3c04-deb2-f49e-5a3d1eb68cec",
+		"0051bd28-2e96-0067-432f-de15d6bbfa5d",
+		"8e0f552d-a1c7-159a-17c4-60bfad3f3a8b",
+		"4974c8a2-d021-d06f-de53-435457157b7f",
+		"69e1f139-8e4e-c18f-effc-6f86c7ddd45a",
+		"4da2d0aa-0e8f-b103-1410-3e1cec3603c8",
+		"c7b438f8-451a-4c94-e923-2cb515fbd2db",
+		"dc931fe1-e79c-e450-218b-da7c322db79d",
+		"6b45ba79-79fc-aa51-f5ac-a7d5d942f5e5"
+	],
+	"folders": [],
+	"timestamp": 1497347288260,
+	"owner": "389686",
+	"public": false,
+	"requests": [
+		{
+			"folder": null,
+			"id": "0051bd28-2e96-0067-432f-de15d6bbfa5d",
+			"name": "CompleteRegistrationInfo",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/CompleteRegistrationInfo",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\r\n  \"email\": \"sample string 1\",\r\n  \"password\": \"sample string 2\",\r\n  \"name\": \"sample string 3\",\r\n  \"family\": \"sample string 4\",\r\n  \"countryId\": 5\r\n}"
+		},
+		{
+			"id": "3488718b-7c3e-eabf-4d41-d5efbef565ab",
+			"name": "Login",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: No-Token\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/Authenticate",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "No-Token",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\n  \"username\": \"9124262137\",\n  \"password\": \"198888\"\n}"
+		},
+		{
+			"id": "4974c8a2-d021-d06f-de53-435457157b7f",
+			"name": "EditPass",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/Edit\n",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"isFromCollection": true,
+			"collectionRequestId": "88b0dce1-f17f-4057-71e3-2629b326cc46",
+			"rawModeData": "{\n  \"newPassword\": \"111111\",\n  \"isNewPasswordSet\": true,\n  \"email\": \"NoN@Non.Non\",\n  \"password\": \"198888\",\n  \"name\": \"NoN\",\n  \"family\": \"NoN\",\n  \"countryId\": 1\n}"
+		},
+		{
+			"folder": null,
+			"id": "4da2d0aa-0e8f-b103-1410-3e1cec3603c8",
+			"name": "ForgetPassword",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/ForgetPassword",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\"username\":\"9108956019\"}"
+		},
+		{
+			"folder": null,
+			"id": "5f4e5f64-1279-2899-082b-67333b210ab4",
+			"name": "RegisterMobileNumber",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/RegisterMobileNumber",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\"username\":\"9108956019\"}"
+		},
+		{
+			"id": "69e1f139-8e4e-c18f-effc-6f86c7ddd45a",
+			"name": "EditInfo",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 61ZN1VNBZGZ2FO6NNEXTVLT1ORGHYI437QPGKPZF679UUMQ36H7RZA5VH89JPGMRL65Z90D7OSWYL9GCAMKRKME6U49LQPZ0USJY\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/Edit\n",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Token",
+					"value": "61ZN1VNBZGZ2FO6NNEXTVLT1ORGHYI437QPGKPZF679UUMQ36H7RZA5VH89JPGMRL65Z90D7OSWYL9GCAMKRKME6U49LQPZ0USJY",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"isFromCollection": true,
+			"collectionRequestId": "320f274e-6c56-fe00-4bdf-2c0e7ff51028",
+			"rawModeData": "{\n  \"newPassword\": \"NoNNoN\",\n  \"isNewPasswordSet\": false,\n  \"email\": \"payam.kokabi@gmail.com\",\n  \"password\": \"NoNNoN\",\n  \"name\": \"پیام\",\n  \"family\": \"کوکبی\",\n  \"countryId\": 1\n}"
+		},
+		{
+			"folder": null,
+			"id": "6b45ba79-79fc-aa51-f5ac-a7d5d942f5e5",
+			"name": "ResetPassword",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/ResetPassword",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\r\n  \"username\": \"sample string 1\",\r\n  \"code\": \"sample string 2\",\r\n  \"password\": \"sample string 3\"\r\n}"
+		},
+		{
+			"folder": null,
+			"id": "7def7223-3c04-deb2-f49e-5a3d1eb68cec",
+			"name": "RegisterVerify",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/VerifyRegistration",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\"username\":\"9108956019\",\"code\":\"\"}"
+		},
+		{
+			"id": "8e0f552d-a1c7-159a-17c4-60bfad3f3a8b",
+			"name": "GetUserInfo",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/GetUserInfo\n",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "",
+			"isFromCollection": true,
+			"collectionRequestId": "5a0b6426-6bf7-c896-a5dc-317d3f7de5bb"
+		},
+		{
+			"folder": null,
+			"id": "c7b438f8-451a-4c94-e923-2cb515fbd2db",
+			"name": "EditMobile",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/ChangeUsername",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\"username\":\"9108956019\"}"
+		},
+		{
+			"id": "d052b8f7-cd50-ab97-cb56-c75ef1deb9d3",
+			"headers": "Content-Type: application/json\nToken: NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "NS4U14Q9X5LSKS40BPWYP9XPGMCHAAGIWX2218NBYBAEK5U5B5ZNU50N5PNP2J9XZC6XZB9CBV9O8SEL1GFEK3Y07O6MV8IPBMPI",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.ihandy.ir/api/api/User/Logout",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Logout",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1499519389421,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"folder": null,
+			"id": "dc931fe1-e79c-e450-218b-da7c322db79d",
+			"name": "VerifyMobileNumber",
+			"dataMode": "raw",
+			"data": [],
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Content-Type: application/json\nToken: 118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q\nDevice: 2\nDeviceId: No-GCMToken\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "http://ihandy.ir/api/api/User/VerifyMobileNumber",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "118W04BWU16BSF9ALL8Y0108PGG3MKY9HWREW7C25259NGPX03CGDB1AB9GUXIKJC735Y5OOJF2850UI0TDTIS6G5RDW0RFXSV7Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Device",
+					"value": "2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DeviceId",
+					"value": "No-GCMToken",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "a7719489-d0f0-e574-a8d0-72be9ec7aa96",
+			"rawModeData": "{\"username\":\"9108956019\",\"code\":\"\",\"type\":\"\"}"
+		}
+	]
+}

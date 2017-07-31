@@ -1,0 +1,81 @@
+<html>
+  <head>
+  <!--
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.espard.com/template/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.espard.com/template/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.espard.com/template/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://www.espard.com/template/images/favicons/manifest.json">
+    <link rel="mask-icon" href="https://www.espard.com/template/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://www.espard.com/template/images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="https://www.espard.com/template/images/favicons/browserconfig.xml">
+  -->
+    <meta name="theme-color" content="#14283a">
+    <title>iHandy</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="iHandy">
+    <meta name="description" content="iHandy description">
+    <meta name="keywords" content="">
+
+  <!--
+    <meta property="og:title" content="اسپارد | سرویس آنلاین ارائه خدمات حرفه‌ای نظافت">
+    <meta property="og:url" content="https://www.espard.com">
+    <meta property="og:image" content="https://www.espard.com/media/page-home/espard-home.jpg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="340">
+    <meta property="og:description" content="سرویس آنلاین ارائه خدمات حرفه‌ای نظافت">
+  -->
+
+    <link rel="stylesheet" type="text/css" href="Css/_reset.css">
+    <link rel="stylesheet" type="text/css" href="Css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Css/_grid.css">
+    <link rel="stylesheet" type="text/css" href="Css/_base.css">
+    <link rel="stylesheet" type="text/css" href="Css/_section.css">
+    <link rel="stylesheet" type="text/css" href="Css/_typography.css">
+    <link rel="stylesheet" type="text/css" href="Css/_button.css">
+    <link rel="stylesheet" type="text/css" href="Css/_color.css">
+    <link rel="stylesheet" type="text/css" href="Css/_homepage.css">
+
+  </head>
+  <body class="homepage nav-fixed" ng-app="iHandyApp">
+    <div class="body-container">
+      <div class="header-container">
+        <div class="header">
+          <div class="header-wrapper container">
+            <div class="row clearfix">
+              <div class="col-md-3 header-left">
+                <a href="#" class="button button-radius_circle download-button">
+                  <span>دانلود اپلیکیشن</span>
+                </a>
+              </div>
+              <div class="col-md-3 header-right">
+                <a href="#" class="logo">
+                  <div class="logo-icon">
+                    <img src="Images/logo.png" alt="ihandy">
+                  </div>
+                  <div class="logo-typography">
+                    <span>ihandy</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 header-center"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-view=""></div>
+    </div>
+
+
+  <script src="Vendor/angular/angular.min.js"></script>
+  <script src="Vendor/angular-resource/angular-resource.min.js"></script>
+  <script src="Vendor/angular-route/angular-route.min.js"></script>
+  <script src="Script/app.js"></script>
+  <script src="Script/Services/apiPath.js"></script>
+  <script src="Script/Services/currentUser.js"></script>
+  <script src="Script/Services/userAccount.js"></script>
+  <script src="Script/Routes/routes.js"></script>
+  <script src="Script/userController.js"></script>
+  </body>
+</html>
