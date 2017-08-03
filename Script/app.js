@@ -3,6 +3,6 @@
 
     var app = angular.module("iHandyApp",[
       'apiPath',
-      'ngRoute'
+      'ui.router'
     ]);
 }());

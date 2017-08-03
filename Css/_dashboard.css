@@ -1,0 +1,466 @@
+.dashboard .container {
+  max-width: none;
+}
+.dashboard .body-container {
+  background-color: #f8f8f8;
+}
+.checklist {
+}
+/******************* Add Services Step *******************/
+ul.services-category-list li {
+  cursor: pointer;
+  line-height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  color: #b4b4b4;
+  position: relative;
+  transition: padding-right .2s;
+  -webkit-transition: padding-right .2s;
+}
+ul.services-category-list > li > i {
+  width: 10px;
+  height: 10px;
+  color: inherit;
+  font-size: 13px;
+}
+ul.services-category-list > li:hover,
+ul.services-category-list > li.selected {
+  color: #00d280;
+  padding-right: 25px;
+}
+ul.services-category-list > li:hover > i,
+ul.services-category-list > li.selected > i {
+  color: inherit;
+}
+ul.services-category-list .category-title {
+  padding-right: 10px;
+}
+
+/*******************  Services Wrapper Section ********************/
+.services-category {
+  padding-top: 55px;
+}
+.services-category:first-child {
+  padding-top: 0;
+}
+.services-category-title {
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+.services-category-title img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.service-item {
+  padding: 20px 10px;
+  margin-top: 5px;
+  border-bottom: 1px solid #e8e7e7;
+}
+.service-item.edit-mode {
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+}
+.service-item:hover,
+.service-item.edit-mode {
+  background-color: #f6f6f6;
+}
+.service-item:last-child {
+  border-bottom: none;
+}
+.service-item .service-header {
+  padding-left: 80px;
+  position: relative;
+}
+.service-item .actions {
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+.service-item .actions > a > span {
+  padding-left: 5px;
+}
+.service-item .actions  a.add-link,
+.service-item .actions a.remove-link {
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 6px 15px;
+  direction: ltr;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.service-item .actions  a.add-link,
+.service-item.edit-mode .actions a.remove-link {
+  display: inline-block;
+}
+.service-item.edit-mode .actions  a.add-link,
+.service-item .actions a.remove-link {
+  display: none;
+}
+.service-item .actions a.add-link {
+  background-color: #007ad2;
+}
+.service-item .actions a.remove-link {
+  background-color: #ff2e68;
+}
+.service-title {
+  color: #525252;
+  font-size: 14px;
+}
+.switch-service {
+  background-color: #e9e6e6;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.switch-service > * {
+  padding-bottom: 10px;
+}
+.switch-service > *:last-child {
+  padding-bottom: 0;
+}
+.switch-service label {
+  padding-right: 10px;
+}
+.service-edit {
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 5px 0;
+}
+.service-edit table {
+  width: 100%;
+  text-align: right;
+}
+.service-edit table td {
+  padding: 5px 0;
+}
+.service-edit table td:first-child {
+  width: 150px;
+}
+.service-edit table td:last-child {
+  direction: ltr;
+  text-align: left;
+}
+/******************** Service Basket **********************/
+.basket-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: 12px;
+}
+.basket-header {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-size: 14px;
+}
+.basket-title i {
+  color: #b1b1b1;
+  padding-left: 5px;
+  font-size: 17px;
+}
+.basket-item {
+  border-bottom: 1px solid #eee;
+  padding: 7px 10px;
+  padding-left: 40px;
+  position: relative;
+}
+.basket-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  vertical-align: middle;
+  padding: 10px;
+}
+.basket-item .edit-button {
+  display: inline-block;
+  background-color: #bdbdbd;
+  color: #fff;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  font-size: 13px;
+  padding: 7px 0;
+  line-height: 0;
+  text-align: center;
+}
+.basket-item:hover .edit-button {
+  background-color: #00d280;
+}
+.basket-item:last-child {
+  border-bottom: none;
+}
+.basket-item .title {
+  color: #525252;
+  font-weight: 500;
+}
+.basket-item:hover .title {
+  /*
+  color: #00d280;
+  */
+}
+.basket-item .count {
+  float: left;
+  font-size: 12px;
+  background-color: #1ccc7d;
+  border-radius: 12px;
+  text-align: center;
+  padding: 5px 0;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.basket-item .details-wrapper {
+  padding-top: 5px;
+  color: #b1b0b0;
+}
+.basket-item .detail {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+.basket-item .detail .label {
+  margin-bottom: 5px;
+}
+.basket-item .detail .dot {
+  height: 3px;
+  width: 3px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #b1b0b0;
+  border-radius: 50%;
+}
+.basket-item .hover-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+/*********************** Cost Estimation and submit Order ******************/
+.cost-estimate-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 13px;
+}
+table.cost-estimate {
+  width: 100%;
+}
+table.cost-estimate tr > td {
+  border-bottom: 1px solid #e9e5e5;
+  padding: 5px 10px;
+  position: relative;
+}
+table.cost-estimate tr:last-child > td {
+  border-bottom: none;
+}
+table.cost-estimate tr > td:first-child {
+  color: #525252;
+}
+table.cost-estimate tr > td:last-child {
+  text-align: left;
+}
+.submit-order-button {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #00d280;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+.submit-order-button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/*************** Order Information [Select Location, User Info, Discount, payment] ***************/
+.order-info .section-container {
+  margin-top: 40px;
+}
+.order-info .section-container:first-child {
+  margin-top: 0;
+}
+.order-info table {
+  width: 100%;
+}
+.order-info table td {
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+.order-info table tr:last-child td {
+  padding-bottom: 0;
+}
+.order-info table td:first-child {
+  width: 170px;
+  padding-left: 30px;
+}
+.order-info table td:last-child {
+  /*text-align: left;*/
+}
+.order-info .label {
+  font-size: 12px;
+}
+/****************** Price Items **********************/
+.price {
+  color: red;
+  font-size: 13px;
+  display: inline-block;
+  padding-right: 10px;
+}
+.price-value {
+  padding-left: 1px;
+  color: inherit;
+}
+.price-label {
+  color: inherit;
+}
+.old-price {
+  color: #ddd;
+  font-size: 12px;
+}
+.old-price .price-value {
+  text-decoration: line-through;
+}
+/*************** Location List ******************/
+.locations-list {
+}
+.location {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  width: 200px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+}
+.location:last-child {
+  margin-left: 0;
+}
+.location .hover-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.location-map {
+  height: 90px;
+  width: 200px;
+  background-color: #efefef;
+}
+.location-title {
+  font-weight: 500;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.location-address {
+  font-size: 12px;
+  padding: 10px;
+  color: #777;
+}
+.location-footer {
+  border-top: 1px solid #ddd;
+  padding: 20px 10px;
+}
+.location-footer button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+.location.selected,
+.location:hover {
+  border-color: #00d280;
+}
+.location:hover button {
+  background-color: #00d280;
+}
+.location .check-icon {
+  color: #fff;
+  border: 2px solid rgba(169, 169, 169, 0.5);
+  background-color: transparent;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 4px 0;
+}
+.location .check-icon > i {
+  display: none;
+}
+.location.selected .check-icon {
+  border-color: #00d280;
+  background-color: #00d280;
+}
+.location.selected .check-icon > i {
+  display: inline-block;
+}
+/***************** Orders page *****************/
+.orders-menu-container {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  text-align: center;
+}
+ul.orders-menu {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #535353;
+}
+ul.orders-menu li {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 0;
+  margin-right: 0;
+}
+ul.orders-menu li > a {
+  display: inline-block;
+  padding: 20px 15px;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+ul.orders-menu li > a:hover {
+  text-decoration: none;
+  color: #1ee692;
+}
+ul.orders-menu li.selected > a:hover,
+ul.orders-menu li.selected > a {
+  text-decoration: none;
+  color: #1ee692;
+  border-bottom: 3px solid #1ee692;
+  padding-bottom: 17px;
+}
