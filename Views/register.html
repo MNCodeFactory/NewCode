@@ -1,0 +1,20 @@
+<div class="body-content" ng-controller="UserCtrl as vm">
+  <section class="hero-container bg-color_green_light">
+    <div class="hero container">
+      <div class="hero-register-form" style="display: block; left: 50%; transform: translateX(-50%);">
+        <form name="registerForm" ng-submit="registerForm.$valid && vm.registerMobileNumber()">
+          <div class="text-input input_phone">
+            <span ng-show="registerForm.phone.$dirty && registerForm.phone.$invalid">مثال: 09xxxxxxxxx یا 9xxxxxxxxx</span><br />
+            <input type="number" name="phone" placeholder="شماره تلفن همراه" ng-model="vm.userData.username" ng-pattern="/^0?9[0-9]{9}$/" required/>
+            <!--<label for="">شماره تلفن همراه</label>-->
+          </div>
+          <div class="agree-terms">
+            <input type="checkbox" name="agree-terms" value="checked"/>
+            <span>تمامی قوانین و مقررات را تأیید میکنم.</span>
+          </div>
+          <input type="submit" name="register" value="ثبت نام در سامانه">
+        </form>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,5 +1,6 @@
 input[type="text"],
 input[type="number"],
+input[type="password"],
 select {
   border: 1px solid #ddd;
   border-radius: 20px;

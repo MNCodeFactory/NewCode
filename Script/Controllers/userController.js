@@ -53,6 +53,7 @@
             userAccount.verifyRegistration.verifyRegistration(vm.verify,
             function(data){
               vm.message = "... Verified";
+              $state.go("confirm");
             },
             function (response) {
                 vm.isLoggedIn = false;

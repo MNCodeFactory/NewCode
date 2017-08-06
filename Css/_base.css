@@ -27,7 +27,8 @@ body {
   padding: 20px 0;
 }
 .dashboard .header {
-  background-color: #3b3b3b;
+  /*background-color: #3b3b3b;*/
+  background-color: #29373c;
   padding: 2px 0;
 	-o-box-shadow: none;
 	-moz-box-shadow: none;
