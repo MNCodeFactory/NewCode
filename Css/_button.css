@@ -93,6 +93,12 @@
   /*background-color: #00cca9;*/
   background-color: #2373da;
   border-radius: 30px;
+  display: inline-block;
+}
+.hero-register-button:hover,
+.hero-register-button:visited {
+  text-decoration: none;
+  color: #fff;
 }
 @media (max-width: 768px) {
   .button-download-link {
