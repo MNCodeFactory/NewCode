@@ -1,0 +1,32 @@
+<div class="login-container" ng-controller="UserCtrl as vm">
+  <div class="login-header">
+    <div class="title">
+      <span>شماره تلفن همراه خود را وارد کنید.</span>
+    </div>
+  </div>
+  <div class="login-form">
+    <div class="form-messages"></div>
+    <form name="registerForm" ng-submit="registerForm.$valid && vm.registerMobileNumber()">
+      <div class="line">
+        <div class="text-input input_phone">
+          <span ng-show="registerForm.phone.$dirty && registerForm.phone.$invalid">مثال: 09xxxxxxxxx یا 9xxxxxxxxx</span><br />
+          <input type="number" name="phone" placeholder="شماره تلفن همراه" ng-model="vm.userData.username" ng-pattern="/^0?9[0-9]{9}$/" required/>
+        </div>
+      </div>
+      <div class="line">
+        <div class="agree-terms">
+          <input type="checkbox" id="AgreeTerms" name="agree-terms"/>
+          <label for="AgreeTerms">تمامی قوانین و مقررات را تأیید میکنم.</label>
+        </div>
+      </div>
+      <div class="line">
+        <input type="submit" name="register" value="تایید">
+      </div>
+    </form>
+    <div class="line" style="margin-top: 15px;">
+      <a ui-sref="login" class="button">
+        <span>بازگشت به ورود</span>
+      </a>
+    </div>
+  </div>
+</div>

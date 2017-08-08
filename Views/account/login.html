@@ -1,0 +1,42 @@
+<div class="login-container" ng-controller="UserCtrl as vm">
+  <div class="login-header">
+    <div class="title">
+      <span>برای استفاده از خدمات ابتدا باید وارد حساب کاربری خود شوید.</span>
+      <span> و در صورت نداشتن حساب کاربری <a ui-sref="register">ثبت نام</a> کنید.</span>
+    </div>
+  </div>
+  <div class="login-form">
+    <div class="form-messages"></div>
+    <form name="loginForm" ng-submit="loginForm.$valid && vm.login()" novalidate>
+      <div class="line">
+        <div class="text-input input_phone">
+          <span ng-show="loginForm.phone.$dirty && loginForm.phone.$invalid">مثال: 09xxxxxxxxx یا 9xxxxxxxxx</span><br />
+          <input type="number" name="phone" placeholder="شماره تلفن همراه" ng-model="vm.userData.username" ng-pattern="/^0?9[0-9]{9}$/" required/>
+        </div>
+      </div>
+      <div class="line">
+        <div class="forget-password-link">
+          <a href="forget_password.html">فراموشی رمز عبور؟</a>
+        </div>
+        <div class="text-input input_password">
+          <span ng-show="loginForm.password.$dirty && loginForm.password.$invalid">حداقل 6 کاراکتر</span>
+          <input type="password" name="password" placeholder="رمز عبور" ng-model="vm.userData.password" ng-pattern="/^.{6,}$/" required/>
+        </div>
+      </div>
+      <div class="line">
+        <div class="remember-me">
+          <input type="checkbox" id="RememberMe" name="" value="">
+          <label for="RememberMe">من را به خاطر بسپار.</label>
+        </div>
+      </div>
+      <div class="line">
+        <input type="submit" name="login" value="ورود">
+      </div>
+    </form>
+    <div class="line" style="margin-top: 15px;">
+      <a ui-sref="register" class="button">
+        <span>ثبت نام</span>
+      </a>
+    </div>
+  </div>
+</div>
