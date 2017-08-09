@@ -28,7 +28,6 @@
   -->
 
     <link rel="stylesheet" type="text/css" href="Css/_reset.css">
-    <link rel="stylesheet" type="text/css" href="Css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="Css/bootstrap.rtl.css">
     <link rel="stylesheet" type="text/css" href="Css/_grid.css">
     <link rel="stylesheet" type="text/css" href="Css/_base.css">
@@ -39,30 +38,25 @@
     <link rel="stylesheet" type="text/css" href="Css/_color.css">
     <link rel="stylesheet" type="text/css" href="Css/_dashboard.css">
     <link rel="stylesheet" type="text/css" href="Css/_homepage.css">
-
-
+    <link rel="stylesheet" type="text/css" href="Css/_account.css">
   </head>
-  <body class="homepage nav-fixed" ng-app="iHandyApp">
+  <body ng-app="iHandyApp"> <!--homepage class removed-->
 
-    <div class="body-container">
+    <ui-view class="body-container"></ui-view>
 
-      <ui-view></ui-view>
-
-    </div>
-
-
-  <script src="Vendor/angular/angular.min.js"></script>
-  <script src="Vendor/angular-resource/angular-resource.min.js"></script>
-  <script src="Vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="Script/app.js"></script>
-  <script src="Script/Routes/routes.js"></script>
-  <script src="Script/Services/apiPath.js"></script>
-  <script src="Script/Services/currentUser.js"></script>
-  <script src="Script/Services/userAccount.js"></script>
-  <script src="Script/Controllers/userController.js"></script>
-  <script src="Script/Directives/home-header.js"></script>
-  <script src="Script/Directives/home-footer.js"></script>
-  <script src="Vendor/jquery/jquery-3.2.1.min.js"></script>
-  <script src="Vendor/jquery/jquery.sticky-kit.min.js"></script>
+    <!--Scripts-->
+    <script src="Vendor/angular/angular.min.js"></script>
+    <script src="Vendor/angular-resource/angular-resource.min.js"></script>
+    <script src="Vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="Script/app.js"></script>
+    <script src="Script/Routes/routes.js"></script>
+    <script src="Script/Services/apiPath.js"></script>
+    <script src="Script/Services/currentUser.js"></script>
+    <script src="Script/Services/userAccount.js"></script>
+    <script src="Script/Controllers/userController.js"></script>
+    <script src="Script/Directives/home-header.js"></script>
+    <script src="Script/Directives/home-footer.js"></script>
+    <script src="Vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="Vendor/jquery/jquery.sticky-kit.min.js"></script>
   </body>
 </html>

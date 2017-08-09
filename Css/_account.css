@@ -13,21 +13,25 @@
 .body-container {
   background-color: #29373c;
 }
-.header-container {
+.account-header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
   background-color: #fff;
   text-align: center;
 }
-.account-page .header {
+.account-header {
   position: relative;
 }
-.account-page .header-container .logo {
+.account-header .logo {
   width: 30px;
   display: inline-block;
 }
-.account-page .header-container .logo img {
+.account-header .logo img {
   width: 100%;
 }
 .account-page .login-container {
@@ -97,15 +101,19 @@
 .forget-password-link:hover {
   text-decoration: none;
 }
-.remember-me {
+.remember-me,
+.agree-terms {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
 }
-.remember-me label {
+.remember-me label,
+.agree-terms label {
   width: 100%;
   display: block;
 }
-.remember-me input[type="checkbox"] {
+.remember-me input[type="checkbox"],
+.agree-terms input[type="checkbox"] {
   float: left;
 }
 .timer {

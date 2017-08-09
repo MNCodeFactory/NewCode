@@ -1,0 +1,38 @@
+<div class="login-container" ng-controller="UserCtrl as vm">
+  <div class="login-header">
+    <div class="title">
+      <span>با وارد کردن کد اعتبار سنجی ارسال شده، حساب کاربری خود را فعال کنید.</span>
+    </div>
+  </div>
+  <div class="login-form">
+    <div class="form-messages"></div>
+    <div class="timer">
+      <div class="time-box">
+        13:30
+      </div>
+    </div>
+    <div class="change-number clearfix">
+      <div class="number">
+        <i class="fa fa-mobile"></i>
+        <span>09367362797</span>
+      </div>
+      <a ui-sref="register" class="link">تغییر شماره</a>
+    </div>
+    <form name="verifyForm" ng-submit="verifyForm.$valid && vm.verifyRegistration()">
+      <div class="line">
+        <div class="text-input input_phone">
+          <input type="number" name="verifyCode" placeholder="کد فعالسازی" ng-model="vm.verify.code" ng-pattern="/^\d{5}$/" required/>
+          <span ng-show="verifyForm.verifyCode.$dirty && verifyForm.verifyCode.$invalid">کد 5 رقمی را وارد نمایید.</span>
+        </div>
+      </div>
+      <div class="line">
+        <input type="submit" name="verify" value="فعالسازی">
+      </div>
+    </form>
+    <div class="line" style="margin-top: 15px;">
+      <a ui-sref="login" class="button">
+        <span>بازگشت به ورود</span>
+      </a>
+    </div>
+  </div>
+</div>
